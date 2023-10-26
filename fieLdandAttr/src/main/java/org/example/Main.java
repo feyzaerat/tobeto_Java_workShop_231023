@@ -2,6 +2,15 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Product product = new Product();
+        product.name = "Laptop";
+        product.id = 1;
+        product.description = "Asus";
+        product.price = 5000;
+        product.stockAmount = 3;
+        System.out.println(product.name);
+
+        ProductManager productManager = new ProductManager();
+        productManager.Add(product);
     }
 }
